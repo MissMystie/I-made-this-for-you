@@ -1,20 +1,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 using VInspector;
+using static UnityEngine.InputSystem.InputAction;
 
 public class PlayerManager : MonoBehaviour
 {
+    public Controls controls;
     public List<CharacterController> characters;
 
     public int characterIndex = 0;
 
+    public void Awake()
+    {
+        controls = new Controls();
+        controls.Enable();
+    }
+
     public void Start()
     {
         ChangeCharacter(0);
+
+        controls.Player.Switch.performed += ChangeCharacter;
     }
 
     [Button]
-    public void ChangeCharacter()
+    public void ChangeCharacter(CallbackContext ctx = default)
     {
         int i = characterIndex + 1;
         if (i >= characters.Count) {
@@ -26,10 +36,10 @@ public class PlayerManager : MonoBehaviour
 
     public void ChangeCharacter(int i)
     {
-        characters[characterIndex].DisableInputs();
+        characters[characterIndex].DisableInputs(controls);
 
         characterIndex = i;
 
-        characters[characterIndex].EnableInputs();
+        characters[characterIndex].EnableInputs(controls);
     }
 }

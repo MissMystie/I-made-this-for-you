@@ -1,13 +1,9 @@
 using UnityEngine;
+using static UnityEngine.InputSystem.InputAction;
 
 public class KnifeCharacterController : CharacterController
 {
-    void Start()
-    {
-        
-    }
-
-    void Update()
+    public override void Attack(CallbackContext ctx = default)
     {
         
     }

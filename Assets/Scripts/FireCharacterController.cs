@@ -1,14 +1,10 @@
 using UnityEngine;
+using static UnityEngine.InputSystem.InputAction;
 
 public class FireCharacterController : CharacterController
 {
-    void Start()
+    public override void Attack(CallbackContext ctx = default)
     {
-        
-    }
-
-    void Update()
-    {
-        
+        if (move.y < 0) Jump();
     }
 }
