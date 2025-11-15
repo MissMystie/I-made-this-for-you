@@ -106,6 +106,10 @@ MonoBehaviour:
   rb: {fileID: 1565788167549994428}
   moveSpeed: 6
   jumpVelocity: 8
+  drag: 0.1
+  acc: 0.1
+  airDrag: 0.05
+  airAcc: 0.05
   move: {x: 0, y: 0}
   isGrounded: 0
   groundCheckRadius: 0.2

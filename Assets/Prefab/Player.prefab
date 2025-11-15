@@ -50,7 +50,16 @@ MonoBehaviour:
   rb: {fileID: 1239604998774523620}
   moveSpeed: 5
   jumpVelocity: 8
+  drag: 0.1
+  acc: 0.1
+  airDrag: 0.1
+  airAcc: 0.1
   move: {x: 0, y: 0}
+  isGrounded: 0
+  groundCheckRadius: 0.2
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 0
   controlsEnabled: 0
 --- !u!61 &3587880639863668205
 BoxCollider2D:
@@ -114,7 +123,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b9b4309482fc73c4ca0c09482956ef08, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -124,7 +133,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &5533104066554289595
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,8 +210,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1397812437
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

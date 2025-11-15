@@ -2,9 +2,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using VInspector;
 using static UnityEngine.InputSystem.InputAction;
+using Unity.Cinemachine;
+using FMOD.Studio;
 
 public class PlayerManager : MonoBehaviour
 {
+    public CinemachineCamera vcam;
     public Controls controls;
     public List<CharacterController> characters;
 
@@ -39,6 +42,7 @@ public class PlayerManager : MonoBehaviour
         characters[characterIndex].DisableInputs(controls);
 
         characterIndex = i;
+        vcam.Follow = characters[characterIndex].transform;
 
         characters[characterIndex].EnableInputs(controls);
     }

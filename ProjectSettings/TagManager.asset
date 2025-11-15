@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Moving
   layers:
   - Default
   - TransparentFX
@@ -12,7 +13,7 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
+  - CameraBounds
   - 
   - 
   - 
@@ -38,8 +39,17 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Ground
+    uniqueID: 1268715425
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 1397812437
+    locked: 0
+  - name: Props
+    uniqueID: 952189349
     locked: 0
   m_RenderingLayers:
   - Default

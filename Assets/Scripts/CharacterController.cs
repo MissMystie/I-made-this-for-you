@@ -5,10 +5,15 @@ using static UnityEngine.InputSystem.InputAction;
 
 public class CharacterController : MonoBehaviour
 {
+    private Controls controls;
     public Rigidbody2D rb;
     public float moveSpeed = 5f;
     public float jumpVelocity = 8f;
-    
+    public float drag = 0.1f;
+    public float acc = 0.1f;
+    public float airDrag = 0.1f;
+    public float airAcc = 0.1f;
+
     public Vector2 move;
     public bool isGrounded;
     public float groundCheckRadius = 0.2f;
@@ -18,9 +23,14 @@ public class CharacterController : MonoBehaviour
 
     public void FixedUpdate()
     {
-        rb.linearVelocityX = move.x * moveSpeed;
+        if (controlsEnabled && controls != null) move = controls.Player.Move.ReadValue<Vector2>(); 
 
         isGrounded = Physics2D.OverlapCircle(transform.position, groundCheckRadius, groundMask);
+
+        if (move.x != 0) rb.linearVelocityX += move.x * moveSpeed * (isGrounded ? acc : airAcc);
+        else rb.linearVelocityX *= (1 - (isGrounded ? drag : airDrag));
+
+        rb.linearVelocityX = Mathf.Clamp(rb.linearVelocityX, -moveSpeed, moveSpeed);
     }
 
     public virtual void Attack(CallbackContext ctx = default)
@@ -36,12 +46,6 @@ public class CharacterController : MonoBehaviour
         }
     }
 
-    private void Move(CallbackContext ctx = default)
-    {
-        Debug.Log("move");
-        move = ctx.ReadValue<Vector2>();
-    }
-
     public void Choose()
     {
 
@@ -51,8 +55,9 @@ public class CharacterController : MonoBehaviour
     {
         if (controlsEnabled) return;
 
+        this.controls = controls;
+
         controls.Player.Jump.performed += Attack;
-        controls.Player.Move.started += Move;
 
         move = Vector2.zero;
 
@@ -66,7 +71,6 @@ public class CharacterController : MonoBehaviour
         if (!controlsEnabled) return;
 
         controls.Player.Jump.performed -= Attack;
-        controls.Player.Move.performed -= Move;
 
         move = Vector2.zero;
 
@@ -76,6 +80,6 @@ public class CharacterController : MonoBehaviour
     public void OnDrawGizmos()
     {
         Gizmos.color = isGrounded ? Color.green : Color.red;
-        Gizmos.DrawWireSphere(Vector2.zero, groundCheckRadius);
+        Gizmos.DrawWireSphere(transform.position, groundCheckRadius);
     }
 }
