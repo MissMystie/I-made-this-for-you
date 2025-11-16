@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mystie.Core.LevelManager
   scenes:
-  - SampleScene
-  - SampleScene
-  - SampleScene
-  - SampleScene
+  - Main Menu
+  - Main Menu
+  - Main Menu
+  - Main Menu
   sceneIndex: 0

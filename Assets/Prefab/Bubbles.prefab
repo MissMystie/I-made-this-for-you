@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7363078987987026548}
   - component: {fileID: 837453330523562444}
   - component: {fileID: 7540736526188389161}
+  - component: {fileID: 4989947907482689635}
+  - component: {fileID: 579391382151990100}
   m_Layer: 0
   m_Name: Bubbles
   m_TagString: Untagged
@@ -156,6 +158,44 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 8
+--- !u!95 &4989947907482689635
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5983169395623620442}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1123436920167ae4d96a2ed86f361acf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &579391382151990100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5983169395623620442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 509366ee3713f82489058b2966cbbc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Mechanism
+  anim: {fileID: 4989947907482689635}
+  input: {fileID: 0}
+  isOn: 1
+  activateParam: IsOn
 --- !u!1 &8534942720182953836
 GameObject:
   m_ObjectHideFlags: 0
