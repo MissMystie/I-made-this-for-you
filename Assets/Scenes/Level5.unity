@@ -2537,32 +2537,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1815662133574716150, guid: fe44b4a6dc8189540ab24fa1ba7a6048, type: 3}
       propertyPath: sceneIndex
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1815662133574716150, guid: fe44b4a6dc8189540ab24fa1ba7a6048, type: 3}
       propertyPath: victoryState
       value: 
       objectReference: {fileID: 1589073381}
-    - target: {fileID: 1815662133574716150, guid: fe44b4a6dc8189540ab24fa1ba7a6048, type: 3}
-      propertyPath: scenes.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1815662133574716150, guid: fe44b4a6dc8189540ab24fa1ba7a6048, type: 3}
-      propertyPath: 'scenes.Array.data[1]'
-      value: Intro
-      objectReference: {fileID: 0}
-    - target: {fileID: 1815662133574716150, guid: fe44b4a6dc8189540ab24fa1ba7a6048, type: 3}
-      propertyPath: 'scenes.Array.data[2]'
-      value: Level4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1815662133574716150, guid: fe44b4a6dc8189540ab24fa1ba7a6048, type: 3}
-      propertyPath: 'scenes.Array.data[3]'
-      value: Level5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1815662133574716150, guid: fe44b4a6dc8189540ab24fa1ba7a6048, type: 3}
-      propertyPath: 'scenes.Array.data[4]'
-      value: Level6
-      objectReference: {fileID: 0}
     - target: {fileID: 5912837390000421724, guid: fe44b4a6dc8189540ab24fa1ba7a6048, type: 3}
       propertyPath: m_Name
       value: LevelManager
