@@ -11,7 +11,7 @@ public class TriggerZone : MonoBehaviour
         if (mech != null && !mech.isOn)
         {
             mech.Toggle();
-
+            if (killOnTrigger) lifetime.Kill();
         }
     }
 }

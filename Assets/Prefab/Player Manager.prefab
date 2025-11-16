@@ -48,4 +48,4 @@ MonoBehaviour:
   characters:
   - {fileID: 0}
   - {fileID: 0}
-  characterIndex: 0
+  characterIndex: 1
