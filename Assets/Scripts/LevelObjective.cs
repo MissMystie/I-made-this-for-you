@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class LevelObjective : Mechanism
 {
-    public override void Activate(bool on)
+    public override void Activate(bool on, bool init = false)
     {
         base.Activate(on);
-        LevelManager.Instance.CompleteLevel();
+        if (!init) LevelManager.Instance.CompleteLevel();
     }
 }
