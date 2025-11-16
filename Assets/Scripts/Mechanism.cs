@@ -14,7 +14,7 @@ public class Mechanism : MonoBehaviour
 
     public void Awake()
     {
-        Activate(isOn);
+        Activate(isOn, true);
     }
 
     void OnEnable()
@@ -33,10 +33,10 @@ public class Mechanism : MonoBehaviour
         Activate(!isOn);
     }
 
-    public virtual void Activate(bool on)
+    public virtual void Activate(bool on, bool init = false)
     {
         isOn = on;
         if (anim != null) anim.SetBool(activateParam, on);
-        onToggle?.Invoke(isOn);
+        if (!init) onToggle?.Invoke(isOn);
     }
 }
