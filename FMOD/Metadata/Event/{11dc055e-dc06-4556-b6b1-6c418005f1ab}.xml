@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{11dc055e-dc06-4556-b6b1-6c418005f1ab}">
 		<property name="name">
-			<value>FireDespawn</value>
+			<value>Firegirl_despawn</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{f8085970-be92-48e4-a725-a9f646c58d93}</destination>
+			<destination>{02d932a0-3628-4bdb-9d37-c2a7a996a8fa}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{56d0361b-4f3c-4c00-b8ee-ab996550fca1}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="parameters">
 			<destination>{27274b56-a494-47ff-8ea0-5e2b779f4464}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{42b5d7c3-a482-44f9-846e-7edfcaed6f12}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{56d0361b-4f3c-4c00-b8ee-ab996550fca1}">
