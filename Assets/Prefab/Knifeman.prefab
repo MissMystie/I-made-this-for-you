@@ -401,6 +401,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knifeman
       objectReference: {fileID: 0}
+    - target: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Chef/chef_walk
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -108632037
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1216874740
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: 832492699
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: 703407941
+      objectReference: {fileID: 0}
     - target: {fileID: 6520925003958487438, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
       propertyPath: m_Controller
       value: 
@@ -459,6 +487,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 7563639841579941368}
   m_SourcePrefab: {fileID: 100100000, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+--- !u!114 &3820204064440146187 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+  m_PrefabInstance: {fileID: 7325181268248300804}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
 --- !u!4 &4109851978328595004 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6674727263591683896, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
@@ -514,12 +553,35 @@ MonoBehaviour:
   attackAnimParam: throw
   jumpAnimParam: jump
   groundedAnimParam: grounded
+  jumpSFX:
+    Guid:
+      Data1: 1829175449
+      Data2: 1161589707
+      Data3: -402790980
+      Data4: 1870820284
+    Path: event:/Chef/chef_jump
+  landSFX:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  walkSFX: {fileID: 3820204064440146187}
   throwPoint: {fileID: 2530335840457507948}
   projectile: {fileID: 2071698612688735165, guid: 9cda1e79ac1412d459507b694c977051, type: 3}
   projectileSpeed: 6
   platform: {fileID: 7856146199384737560}
   platformOut: 0
   moveSpeedPlatform: 3
+  boardAnimParam: board
+  throwSFX:
+    Guid:
+      Data1: 1107172562
+      Data2: 1289811752
+      Data3: 979420845
+      Data4: -1944480905
+    Path: event:/Chef/chef_knifeuse
 --- !u!212 &7563639841579941368
 SpriteRenderer:
   m_ObjectHideFlags: 0

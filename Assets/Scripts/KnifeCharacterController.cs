@@ -1,3 +1,4 @@
+using FMODUnity;
 using UnityEngine;
 using static UnityEngine.InputSystem.InputAction;
 
@@ -10,6 +11,9 @@ public class KnifeCharacterController : CharacterController
     public bool platformOut;
     public float moveSpeedPlatform = 3f;
     public string boardAnimParam = "board";
+
+    public EventReference throwSFX;
+    
 
     public override void Awake()
     {
@@ -30,6 +34,7 @@ public class KnifeCharacterController : CharacterController
             
             if (!platformOut)
             {
+                RuntimeManager.PlayOneShot(throwSFX);
                 anim.SetTrigger(attackAnimParam);
                 Rigidbody2D projectileInstance = Instantiate(projectile);
                 projectileInstance.transform.position = throwPoint.position;
