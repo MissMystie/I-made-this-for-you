@@ -22,7 +22,7 @@ namespace Mystie.UI
 
         private void OnClick()
         {
-            GameManager.Instance.LoadMainMenu();
+            //GameManager.Instance.LoadMainMenu();
         }
 
         private void OnReset()

@@ -5,7 +5,7 @@ using Mystie.UI.Transition;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Mystie.Core
+/*namespace Mystie.Core
 {
     public class GameManager : MonoBehaviour
     {
@@ -80,9 +80,9 @@ namespace Mystie.Core
             // Wait for the localization system to initialize, loading Locales, preloading etc.
             //yield return LocalizationSettings.InitializationOperation;
             //gameSettings.LoadLocale();
-        }*/
+        }
 
-        public static void SetGameState(GameState state)
+public static void SetGameState(GameState state)
         {
             if (gameState != state) return;
 
@@ -124,13 +124,6 @@ namespace Mystie.Core
             sceneTransitioner.LoadScene(systemData.mainMenuScene, SceneTransitionMode.Fade);
         }
 
-        public void LoadCamp()
-        {
-            Debug.Log("Loading camp...");
-            gameState = GameState.Camp;
-            sceneTransitioner.LoadScene(systemData.campScene, SceneTransitionMode.Fade);
-        }
-
         public void Quit()
         {
             Debug.Log("Quitting the game...");
@@ -155,4 +148,4 @@ namespace Mystie.Core
         Pause,
         Gameover
     }
-}
+}*/

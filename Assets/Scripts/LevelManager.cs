@@ -57,7 +57,9 @@ namespace Mystie.Core
         public void NextLevel()
         {
             Debug.Log("Next level");
-            SceneManager.LoadScene(scenes[sceneIndex + 1]);
+            sceneIndex += 1;
+            if (sceneIndex >= scenes.Count) sceneIndex = 0;
+            SceneManager.LoadScene(scenes[sceneIndex]);
         }
 
         /*

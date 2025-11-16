@@ -72,6 +72,7 @@ MonoBehaviour:
   isOn: 0
   activateParam: IsOn
   cage: {fileID: 7933751456423401640}
+  cageCollider: {fileID: 3309339397916773523}
   ingredient: {fileID: 6170753024642641994}
 --- !u!95 &844515019377855232
 Animator:

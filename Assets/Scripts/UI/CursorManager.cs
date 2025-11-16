@@ -14,7 +14,7 @@ namespace Mystie.Core
         {
             DontDestroyOnLoad(gameObject);
 
-            input = GameManager.Instance.inputManager;
+            //input = GameManager.Instance.inputManager;
             UnityEngine.Cursor.visible = false;
         }
 

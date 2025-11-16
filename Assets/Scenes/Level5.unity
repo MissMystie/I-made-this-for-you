@@ -3281,6 +3281,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4119799754454173041, guid: 54dfde4016eeeae4585812f2d366e95a, type: 3}
+      propertyPath: mechanism
+      value: 
+      objectReference: {fileID: 918538271}
     - target: {fileID: 8843450443880493866, guid: 54dfde4016eeeae4585812f2d366e95a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4
@@ -3627,6 +3631,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36b623168d4565e4e8c225dfe497c7a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KnifeCharacterController
+--- !u!114 &918538271 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1924894065932873109, guid: 54dfde4016eeeae4585812f2d366e95a, type: 3}
+  m_PrefabInstance: {fileID: 496750796}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2abdec8907ea1843a4f6f21902e4459, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelObjective
 --- !u!1 &962078764
 GameObject:
   m_ObjectHideFlags: 0

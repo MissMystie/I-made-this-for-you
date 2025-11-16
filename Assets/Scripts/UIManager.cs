@@ -14,7 +14,7 @@ namespace Mystie.UI
     {
         //private GameManager gameManager;
         [field: SerializeField] public Canvas canvas { get; private set; }
-        private InputManager input;
+        //private InputManager input;
 
         #region Singleton
 
@@ -61,26 +61,26 @@ namespace Mystie.UI
                 return;
             }
 
-            input = GameManager.Instance.inputManager;
-            cursor = GameManager.Instance.cursor;
+            //input = GameManager.Instance.inputManager;
+            //cursor = GameManager.Instance.cursor;
         }
 
         protected void OnEnable()
         {
-            input.actions.UI.Submit.started += OnSubmit;
-            input.actions.UI.Cancel.started += OnCancel;
+            //input.actions.UI.Submit.started += OnSubmit;
+            //input.actions.UI.Cancel.started += OnCancel;
             //input.actions.UI.Pause.started += OnPause;
             //input.actions.UI.Escape.performed += OnEscape;
         }
 
         protected void OnDisable()
         {
-            input.actions.UI.Submit.started -= OnSubmit;
-            input.actions.UI.Cancel.started -= OnCancel;
+            //input.actions.UI.Submit.started -= OnSubmit;
+            //input.actions.UI.Cancel.started -= OnCancel;
             //input.actions.UI.Pause.started -= OnPause;
             //input.actions.UI.Escape.performed -= OnEscape;
 
-            GameManager.Unpause();
+            //GameManager.Unpause();
         }
 
         public IEnumerator Start()
