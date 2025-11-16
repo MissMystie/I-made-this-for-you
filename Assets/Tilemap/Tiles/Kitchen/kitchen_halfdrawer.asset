@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: kitchen_halfdrawer
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: -4136729397018612694, guid: d7b73908cc9f6054dbc88e32749b8df0, type: 3}
+  m_Sprite: {fileID: 1947387857, guid: d738ea645999d284c8ddb5300f14ca2c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

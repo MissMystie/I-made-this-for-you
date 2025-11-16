@@ -1,6 +1,8 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using VInspector;
+using static HealthManager;
 
 public class Mechanism : MonoBehaviour
 {
@@ -12,29 +14,29 @@ public class Mechanism : MonoBehaviour
 
     public void Awake()
     {
-        Activate(isOn);
+        Activate(isOn, true);
     }
 
     void OnEnable()
     {
-        if (input) input.onToggle += Activate;
+        if (input) input.onToggle += Toggle;
     }
 
     void OnDisable()
     {
-        if (input) input.onToggle -= Activate;
+        if (input) input.onToggle -= Toggle;
     }
 
     [Button()]
-    public void Toggle()
+    public void Toggle(bool on)
     {
         Activate(!isOn);
     }
 
-    public virtual void Activate(bool on)
+    public virtual void Activate(bool on, bool init = false)
     {
         isOn = on;
-        anim.SetBool(activateParam, on);
-        onToggle?.Invoke(isOn);
+        if (anim != null) anim.SetBool(activateParam, on);
+        if (!init) onToggle?.Invoke(isOn);
     }
 }

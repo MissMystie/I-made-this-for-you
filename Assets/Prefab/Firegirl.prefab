@@ -1,5 +1,148 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1024076975529076618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4055485783865928470}
+  - component: {fileID: 6807047024262659079}
+  - component: {fileID: 943784298255107455}
+  - component: {fileID: 5182819451086069802}
+  m_Layer: 3
+  m_Name: AttackEffect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4055485783865928470
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024076975529076618}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 987471741275826530}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &6807047024262659079
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024076975529076618}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 1
+--- !u!114 &943784298255107455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024076975529076618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1779e1c556b0840b3ce463c1960379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerZone
+  killOnTrigger: 0
+  lifetime: {fileID: 0}
+  damageType: 2
+--- !u!212 &5182819451086069802
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024076975529076618}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 1397812437
+  m_SortingLayer: 1
+  m_SortingOrder: 10
+  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  m_Color: {r: 1, g: 0, b: 0, a: 0.3529412}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &326856388709106520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10,11 +153,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 665704220995463738, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5
+      value: -17.439999
       objectReference: {fileID: 0}
     - target: {fileID: 665704220995463738, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 665704220995463738, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -56,23 +199,99 @@ PrefabInstance:
       propertyPath: m_Name
       value: Firegirl
       objectReference: {fileID: 0}
+    - target: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Firegirl/Firegirl_walk
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -1359939364
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1088245738
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -1972332667
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: 1749576481
+      objectReference: {fileID: 0}
+    - target: {fileID: 6520925003958487438, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: de6e57ee4bfe14b4c90bedc340a5887e, type: 2}
     - target: {fileID: 6674727263591683896, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7575984299484871960, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: dieOnHit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7575984299484871960, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: respawns
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7575984299484871960, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: respawnTime
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7575984299484871960, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: vulnerabilities.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7575984299484871960, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: 'vulnerabilities.Array.data[0]'
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9147064910385986674, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: m_Size.x
+      value: 1.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 9147064910385986674, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: m_Size.y
+      value: 1.65
       objectReference: {fileID: 0}
     - target: {fileID: 9147064910385986674, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1046535270694024398, guid: 9e3f6f8bc3381f2459dbc503c344dce6, type: 3}
+    - target: {fileID: 9147064910385986674, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9147064910385986674, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8024174264216445001, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 665704220995463738, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4055485783865928470}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4202572947762147151, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
       insertIndex: 1
       addedObject: {fileID: 6441954099136577721}
   m_SourcePrefab: {fileID: 100100000, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+--- !u!4 &987471741275826530 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 665704220995463738, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+  m_PrefabInstance: {fileID: 326856388709106520}
+  m_PrefabAsset: {fileID: 0}
 --- !u!50 &1565788167549994428 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 1239604998774523620, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
@@ -95,17 +314,76 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef624c89d25a0fe43967c84ec499dd7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireCharacterController
+  sprite: {fileID: 6352431949795923040}
+  anim: {fileID: 6843149929665940182}
+  faceDir: 1
   rb: {fileID: 1565788167549994428}
+  gravity: 9.8
   moveSpeed: 6
-  jumpVelocity: 8
+  jumpVelocity: 15
+  jumpDamp: 0.6
+  jumpBuildupTime: 0.125
+  jumpFreezeTime: 0.375
   drag: 0.1
   acc: 0.1
   airDrag: 0.05
   airAcc: 0.05
   move: {x: 0, y: 0}
-  isGrounded: 0
-  groundCheckRadius: 0.2
+  isGrounded: 1
+  groundCheckDist: 0.1
   groundMask:
     serializedVersion: 2
     m_Bits: 64
-  controlsEnabled: 0
+  groundCollider: {fileID: 0}
+  movingPlatform: {fileID: 0}
+  movingPlatformTag: Moving
+  controlsEnabled: 1
+  speedAnimParam: speed
+  attackAnimParam: attack
+  jumpAnimParam: jump
+  groundedAnimParam: grounded
+  jumpSFX:
+    Guid:
+      Data1: 266203144
+      Data2: 1277817060
+      Data3: 408740527
+      Data4: -1262482630
+    Path: event:/Firegirl/Firegirl_jump
+  landSFX:
+    Guid:
+      Data1: -828976466
+      Data2: 1274288278
+      Data3: 1368970142
+      Data4: 1694159224
+    Path: event:/Firegirl/Firegirl_land
+  walkSFX: {fileID: 6063367861826393943}
+  attackArea: {fileID: 1024076975529076618}
+  attackTime: 0.5
+  attackSFX:
+    Guid:
+      Data1: 1296297252
+      Data2: 1299044597
+      Data3: 803751345
+      Data4: 1836007620
+    Path: event:/Firegirl/Firegirl_attack
+--- !u!114 &6063367861826393943 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+  m_PrefabInstance: {fileID: 326856388709106520}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+--- !u!4 &6352431949795923040 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6674727263591683896, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+  m_PrefabInstance: {fileID: 326856388709106520}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6843149929665940182 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6520925003958487438, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+  m_PrefabInstance: {fileID: 326856388709106520}
+  m_PrefabAsset: {fileID: 0}
