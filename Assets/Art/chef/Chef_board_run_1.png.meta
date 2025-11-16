@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 6192d037890c21443a9c6bf4e007d1af
+guid: a10b49b7851f15043901059bb4fac97e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4509123861784994529
-    second: firegirl_run_1_0
+      213: -887483180612518899
+    second: Chef_board_run_1_0
+  - first:
+      213: -8654424352968667960
+    second: Chef_board_run_1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: firegirl_run_1_0
+      name: Chef_board_run_1_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 48
         y: 0
-        width: 330
-        height: 330
+        width: 202
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1e2aeed0340a39e30800000000000000
-      internalID: 4509123861784994529
+      spriteID: d0cf473dfb60fa3f0800000000000000
+      internalID: -887483180612518899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chef_board_run_1_1
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 138
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc00d177ee45e780800000000000000
+      internalID: -8654424352968667960
       vertices: []
       indices: 
       edges: []
@@ -148,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      firegirl_run_1_0: 4509123861784994529
+      Chef_board_run_1_0: -887483180612518899
+      Chef_board_run_1_1: -8654424352968667960
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

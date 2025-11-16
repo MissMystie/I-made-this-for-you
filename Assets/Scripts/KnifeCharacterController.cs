@@ -9,6 +9,7 @@ public class KnifeCharacterController : CharacterController
     public GameObject platform;
     public bool platformOut;
     public float moveSpeedPlatform = 3f;
+    public string boardAnimParam = "board";
 
     public override void Awake()
     {
@@ -20,18 +21,16 @@ public class KnifeCharacterController : CharacterController
     {
         if (isGrounded)
         {
-            if (move.y < 0)
-            {
-                StartCoroutine(JumpCoroutine());
-            }
             if (move.y > 0 || platformOut)
             {
                 platformOut = !platformOut;
-
                 platform.SetActive(platformOut);
+                anim.SetBool("board", platformOut);
             }
-            else
+            
+            if (!platformOut)
             {
+                anim.SetTrigger(attackAnimParam);
                 Rigidbody2D projectileInstance = Instantiate(projectile);
                 projectileInstance.transform.position = throwPoint.position;
                 projectileInstance.linearVelocityX = projectileSpeed * faceDir;

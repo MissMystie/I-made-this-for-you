@@ -38,6 +38,7 @@ public class CharacterController : MonoBehaviour
     public string speedAnimParam = "speed";
     public string attackAnimParam = "attack";
     public string jumpAnimParam = "jump";
+    
     public string groundedAnimParam = "grounded";
 
     public virtual void Awake()

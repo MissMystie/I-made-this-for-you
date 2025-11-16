@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 385d63dc3ba258e4e8329498c907ec99
+guid: e516f8e7f0e6a26439b32fe86ab8ae2d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4871557390731104834
-    second: firegirl_idle_2_0
+      213: 5179346570296864808
+    second: Chef_board_run_0_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: firegirl_idle_2_0
+      name: Chef_board_run_0_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 48
         y: 0
-        width: 330
-        height: 330
+        width: 202
+        height: 294
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ebd2b8e1d50c46cb0800000000000000
-      internalID: -4871557390731104834
+      spriteID: 820be2ba34cb0e740800000000000000
+      internalID: 5179346570296864808
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      firegirl_idle_2_0: -4871557390731104834
+      Chef_board_run_0_0: 5179346570296864808
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

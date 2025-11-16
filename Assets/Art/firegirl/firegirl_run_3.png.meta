@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: c5e3b78f80001b94e9d12ff77cceec5a
+guid: c9dc38be58dde064ea480edef47a80dd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1024683159850429286
-    second: firegirl_idle_1_0
+      213: 8449477952081543603
+    second: firegirl_run_3_0
+  - first:
+      213: 7647461174559171076
+    second: firegirl_run_3_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: firegirl_idle_1_0
+      name: firegirl_run_3_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 65
         y: 0
-        width: 330
-        height: 330
+        width: 192
+        height: 213
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a945ac9581897c1f0800000000000000
-      internalID: -1024683159850429286
+      spriteID: 3b1c05f1e63924570800000000000000
+      internalID: 8449477952081543603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firegirl_run_3_1
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 203
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 402e0379b6d312a60800000000000000
+      internalID: 7647461174559171076
       vertices: []
       indices: 
       edges: []
@@ -148,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      firegirl_idle_1_0: -1024683159850429286
+      firegirl_run_3_0: 8449477952081543603
+      firegirl_run_3_1: 7647461174559171076
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
