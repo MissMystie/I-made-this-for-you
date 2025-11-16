@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b08ceb78e3b2495b8d808a5860e66794, type: 3}
-  m_Name: Collision
+  m_Name: Collision Half
   m_EditorClassIdentifier: Unity.2D.Tilemap.Extras::UnityEngine.Tilemaps.AutoTile
-  m_DefaultSprite: {fileID: 7181899760899602203, guid: d738ea645999d284c8ddb5300f14ca2c, type: 3}
+  m_DefaultSprite: {fileID: -4136729397018612694, guid: d7b73908cc9f6054dbc88e32749b8df0, type: 3}
   m_DefaultGameObject: {fileID: 0}
   m_DefaultColliderType: 1
   m_MaskType: 0
