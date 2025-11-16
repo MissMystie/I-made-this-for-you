@@ -11,9 +11,13 @@ public class BouncePad : MonoBehaviour
         if (collider.gameObject.name == target)
         {
             Rigidbody2D rb = collider.attachedRigidbody;
+            
             if (rb != null)
             {
-                rb.linearVelocityY = bounce;
+                KnifeCharacterController knifeman = rb.GetComponent<KnifeCharacterController>();
+
+                if (knifeman == null || !knifeman.platformOut)
+                    rb.linearVelocityY = bounce;
             }
         }
     }
