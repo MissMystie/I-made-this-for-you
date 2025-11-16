@@ -33,10 +33,12 @@ namespace Mystie.Core
                 return;
             }
 
-            currentRespawn = respawnPoint;
+            //currentRespawn = respawnPoint;
 
-            GameObject playerInstance = Instantiate(playerPrefab.gameObject, currentRespawn.position, Quaternion.identity);
+            //GameObject playerInstance = Instantiate(playerPrefab.gameObject, currentRespawn.position, Quaternion.identity);
         }
+
+        /*
 
         private void OnDestroy()
         {
@@ -61,7 +63,7 @@ namespace Mystie.Core
             player.gameObject.transform.position = currentRespawn.position;
             player.gameObject.SetActive(true);
             player.gameObject.transform.position = respawnPoint.position;
-        }
+        }*/
     }
 
 }

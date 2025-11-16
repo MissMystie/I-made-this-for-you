@@ -84,6 +84,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TriggerZone
   killOnTrigger: 0
   lifetime: {fileID: 0}
+  damageType: 2
 --- !u!212 &5182819451086069802
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -205,6 +206,26 @@ PrefabInstance:
     - target: {fileID: 6674727263591683896, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7575984299484871960, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: dieOnHit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7575984299484871960, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: respawns
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7575984299484871960, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: respawnTime
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7575984299484871960, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: vulnerabilities.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7575984299484871960, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: 'vulnerabilities.Array.data[0]'
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9147064910385986674, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
       propertyPath: m_Size.x

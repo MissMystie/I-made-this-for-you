@@ -1,6 +1,8 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using VInspector;
+using static HealthManager;
 
 public class Mechanism : MonoBehaviour
 {

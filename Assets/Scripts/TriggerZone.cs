@@ -1,16 +1,18 @@
 using UnityEngine;
+using static HealthManager;
 
 public class TriggerZone : MonoBehaviour
 {
     public bool killOnTrigger;
     public Lifetime lifetime;
+    public DamageType damageType;
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        Mechanism mech = col.GetComponent<Mechanism>();
-        if (mech != null && !mech.isOn)
+        HealthManager health = col.GetComponent<HealthManager>();
+        if (health != null)
         {
-            mech.Toggle();
+            health.TakeDamage(damageType);
             if (killOnTrigger) lifetime.Kill();
         }
     }

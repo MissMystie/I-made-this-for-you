@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daf1adc4b56a84d4192560571e21d022, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BouncePad
-  bounce: 5
+  bounce: 7
   target: Knifeman
   mask:
     serializedVersion: 2

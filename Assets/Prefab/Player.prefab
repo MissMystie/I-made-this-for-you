@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3587880639863668205}
   - component: {fileID: 1239604998774523620}
   - component: {fileID: 6520925003958487438}
+  - component: {fileID: 7575984299484871960}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -48,10 +49,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d0f640d5fb84045a4a41201c39c19b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  anim: {fileID: 0}
+  faceDir: 1
   rb: {fileID: 1239604998774523620}
   gravity: 9.8
   moveSpeed: 5
   jumpVelocity: 8
+  jumpDamp: 0.8
+  jumpBuildupTime: 0.25
+  jumpFreezeTime: 0.5
   drag: 0.1
   acc: 0.1
   airDrag: 0.1
@@ -66,6 +73,10 @@ MonoBehaviour:
   movingPlatform: {fileID: 0}
   movingPlatformTag: Moving
   controlsEnabled: 0
+  speedAnimParam: speed
+  attackAnimParam: attack
+  jumpAnimParam: jump
+  groundedAnimParam: grounded
 --- !u!61 &3587880639863668205
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -161,6 +172,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7575984299484871960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4202572947762147151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d7b5895168a604a96e1eff234e2d56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthManager
 --- !u!1 &5533104066554289595
 GameObject:
   m_ObjectHideFlags: 0
