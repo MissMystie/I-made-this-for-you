@@ -31,16 +31,16 @@ public class MovingPlatform : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == playerTag)
+        if (collider.gameObject.CompareTag(playerTag))
         {
             player = collider;
-            player.transform.parent = transform.parent;
+            player.transform.parent = transform;
         }
     }
 
     public void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.gameObject == player)
+        if (collider.gameObject == player.gameObject)
         {
             player.transform.parent = null;
             player = null;

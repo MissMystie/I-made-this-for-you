@@ -19,16 +19,16 @@ public class Mechanism : MonoBehaviour
 
     void OnEnable()
     {
-        if (input) input.onToggle += Activate;
+        if (input) input.onToggle += Toggle;
     }
 
     void OnDisable()
     {
-        if (input) input.onToggle -= Activate;
+        if (input) input.onToggle -= Toggle;
     }
 
     [Button()]
-    public void Toggle()
+    public void Toggle(bool on)
     {
         Activate(!isOn);
     }
@@ -36,7 +36,7 @@ public class Mechanism : MonoBehaviour
     public virtual void Activate(bool on)
     {
         isOn = on;
-        anim.SetBool(activateParam, on);
+        if (anim != null) anim.SetBool(activateParam, on);
         onToggle?.Invoke(isOn);
     }
 }

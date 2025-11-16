@@ -1,16 +1,23 @@
+using NaughtyAttributes;
+using NUnit.Framework;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 namespace Mystie.Core
 {
     public class LevelManager : MonoBehaviour
     {
-        public GameObject player { get; private set; }
+        //public GameObject player { get; private set; }
         //[field: SerializeField] public GameObject playerObj { get; private set; }
-        [field: SerializeField] public GameObject playerPrefab { get; private set; }
-        [field: SerializeField] public Transform respawnPoint { get; private set; }
-        [field: SerializeField] private float respawnTime = 4f;
+        //[field: SerializeField] public GameObject playerPrefab { get; private set; }
+        //[field: SerializeField] public Transform respawnPoint { get; private set; }
+        //[field: SerializeField] private float respawnTime = 4f;
+
+        [field: Scene] public List<string> scenes;
+        public int sceneIndex;
 
         private Transform currentRespawn;
 
@@ -36,6 +43,11 @@ namespace Mystie.Core
             //currentRespawn = respawnPoint;
 
             //GameObject playerInstance = Instantiate(playerPrefab.gameObject, currentRespawn.position, Quaternion.identity);
+        }
+
+        public void CompleteLevel()
+        {
+            SceneManager.LoadSceneAsync(scenes[sceneIndex + 1]);
         }
 
         /*
