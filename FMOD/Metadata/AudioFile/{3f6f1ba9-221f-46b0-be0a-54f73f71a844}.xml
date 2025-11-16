@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{3f6f1ba9-221f-46b0-be0a-54f73f71a844}">
+		<property name="assetPath">
+			<value>Fireland002.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.4857291666666668</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6ca6d77e-fb2e-4437-aa30-940aa479d2f4}</destination>
+		</relationship>
+	</object>
+</objects>
