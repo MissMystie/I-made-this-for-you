@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{70e2a7f0-6f48-48f2-b463-4dc7d770318e}">
+		<property name="assetPath">
+			<value>FireDeath001.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.547625</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6ca6d77e-fb2e-4437-aa30-940aa479d2f4}</destination>
+		</relationship>
+	</object>
+</objects>
