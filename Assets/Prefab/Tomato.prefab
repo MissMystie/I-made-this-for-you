@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2660603455850665797}
   - component: {fileID: 3403172502681490040}
   - component: {fileID: 394829220753949952}
+  - component: {fileID: 7216700934622553868}
   m_Layer: 0
   m_Name: Tomato
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -2.5, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -68,7 +69,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 1
 --- !u!212 &394829220753949952
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -127,3 +128,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7216700934622553868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455564695833271256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d7b5895168a604a96e1eff234e2d56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthManager
+  dieOnHit: 1
+  respawns: 0
+  safeGround: {x: 0, y: 0}
+  respawnTime: 0
+  vulnerabilities: 00000000
+  mechanism: {fileID: 0}
