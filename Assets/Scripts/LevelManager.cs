@@ -1,3 +1,4 @@
+using Mystie.UI;
 using NaughtyAttributes;
 using NUnit.Framework;
 using System.Collections;
@@ -10,6 +11,8 @@ namespace Mystie.Core
 {
     public class LevelManager : MonoBehaviour
     {
+        public UIState victoryState;
+
         //public GameObject player { get; private set; }
         //[field: SerializeField] public GameObject playerObj { get; private set; }
         //[field: SerializeField] public GameObject playerPrefab { get; private set; }
@@ -47,7 +50,14 @@ namespace Mystie.Core
 
         public void CompleteLevel()
         {
-            SceneManager.LoadSceneAsync(scenes[sceneIndex + 1]);
+            Debug.Log("Complete level");
+            victoryState.SetState();
+        }
+
+        public void NextLevel()
+        {
+            Debug.Log("Next level");
+            SceneManager.LoadScene(scenes[sceneIndex + 1]);
         }
 
         /*
