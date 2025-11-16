@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: kitchen_halfdrawer
+  m_Name: kitchen_tileset_bg_0
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: 1947387857, guid: d738ea645999d284c8ddb5300f14ca2c, type: 3}
+  m_Sprite: {fileID: -107239868211018902, guid: 40d37420a1258264cba4fc6cb2b65897, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
