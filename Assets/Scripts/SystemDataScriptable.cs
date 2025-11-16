@@ -16,7 +16,6 @@ namespace Mystie.Core
         [Header("Scenes")]
 
         [Scene] public string mainMenuScene;
-        [Scene] public string campScene;
 
         [Header("Audio")]
 

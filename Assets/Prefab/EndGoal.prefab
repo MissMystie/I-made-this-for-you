@@ -72,6 +72,7 @@ MonoBehaviour:
   isOn: 0
   activateParam: IsOn
   cage: {fileID: 7933751456423401640}
+  cageCollider: {fileID: 3309339397916773523}
   ingredient: {fileID: 6170753024642641994}
 --- !u!95 &844515019377855232
 Animator:
@@ -247,6 +248,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2abdec8907ea1843a4f6f21902e4459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelObjective
+  anim: {fileID: 0}
+  input: {fileID: 0}
+  isOn: 0
+  activateParam: IsOn
 --- !u!95 &4721494670975212445
 Animator:
   serializedVersion: 7
@@ -299,7 +304,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

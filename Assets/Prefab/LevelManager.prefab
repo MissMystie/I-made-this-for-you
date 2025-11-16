@@ -44,9 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2954ba9ebe125d408af6e04c0abe31f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mystie.Core.LevelManager
+  victoryState: {fileID: 0}
   scenes:
   - Main Menu
-  - Main Menu
-  - Main Menu
-  - Main Menu
+  - Intro
+  - Level4
+  - Level5
+  - Level6
   sceneIndex: 0
