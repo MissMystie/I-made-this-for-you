@@ -318,9 +318,9 @@ MonoBehaviour:
   anim: {fileID: 6843149929665940182}
   faceDir: 1
   rb: {fileID: 1565788167549994428}
-  gravity: 9.8
+  gravity: 9.5
   moveSpeed: 6
-  jumpVelocity: 15
+  jumpVelocity: 16
   jumpDamp: 0.6
   jumpBuildupTime: 0.125
   jumpFreezeTime: 0.375

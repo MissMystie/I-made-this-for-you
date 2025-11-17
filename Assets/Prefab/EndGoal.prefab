@@ -327,7 +327,7 @@ MonoBehaviour:
   safeGround: {x: 0, y: 0}
   respawnTime: 0
   vulnerabilities: 00000000
-  mechanism: {fileID: 0}
+  mechanism: {fileID: 1924894065932873109}
 --- !u!1 &7933751456423401640
 GameObject:
   m_ObjectHideFlags: 0

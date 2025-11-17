@@ -7,7 +7,7 @@ public class KnifeCharacterController : CharacterController
     public Transform throwPoint;
     public Rigidbody2D projectile;
     public float projectileSpeed = 6f;
-    public GameObject platform;
+    public MovingPlatform platform;
     public bool platformOut;
     public float moveSpeedPlatform = 3f;
     public string boardAnimParam = "board";
@@ -18,7 +18,7 @@ public class KnifeCharacterController : CharacterController
     public override void Awake()
     {
         base.Awake();
-        platform.SetActive(false);
+        platform.gameObject.SetActive(false);
     }
 
     public override void Attack(CallbackContext ctx = default)
@@ -28,7 +28,8 @@ public class KnifeCharacterController : CharacterController
             if (move.y > 0 || platformOut)
             {
                 platformOut = !platformOut;
-                platform.SetActive(platformOut);
+                if (!platformOut) platform.Unparent();
+                platform.gameObject.SetActive(platformOut);
                 anim.SetBool("board", platformOut);
             }
             
