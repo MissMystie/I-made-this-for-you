@@ -9,13 +9,13 @@ public class FireCharacterController : CharacterController
     public GameObject attackArea;
     public float attackTime = 0.5f;
 
-    
+
     public EventReference attackSFX;
-    
+
 
     public override void Attack(CallbackContext ctx = default)
     {
-        if (isGrounded && move.y < 0) StartCoroutine(JumpCoroutine());
+        if (isGrounded && move.y > 0) Jump();
         else StartCoroutine(AttackCoroutine());
     }
 

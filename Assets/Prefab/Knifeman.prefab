@@ -571,7 +571,7 @@ MonoBehaviour:
   throwPoint: {fileID: 2530335840457507948}
   projectile: {fileID: 2071698612688735165, guid: 9cda1e79ac1412d459507b694c977051, type: 3}
   projectileSpeed: 6
-  platform: {fileID: 7856146199384737560}
+  platform: {fileID: 85195259900952559}
   platformOut: 0
   moveSpeedPlatform: 3
   boardAnimParam: board

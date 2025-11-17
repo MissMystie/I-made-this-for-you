@@ -40,7 +40,7 @@ public class CharacterController : MonoBehaviour
     public string speedAnimParam = "speed";
     public string attackAnimParam = "attack";
     public string jumpAnimParam = "jump";
-    
+
     public string groundedAnimParam = "grounded";
 
     public EventReference jumpSFX;
@@ -103,12 +103,11 @@ public class CharacterController : MonoBehaviour
         Debug.Log("attack");
     }
 
-    public void Jump()
+    public void Jump(CallbackContext ctx = default)
     {
         if (isGrounded)
         {
-
-
+            StartCoroutine(JumpCoroutine());
         }
     }
 
@@ -142,7 +141,8 @@ public class CharacterController : MonoBehaviour
 
         this.controls = controls;
 
-        controls.Player.Jump.performed += Attack;
+        controls.Player.Attack.performed += Attack;
+        controls.Player.Jump.performed += Jump;
 
         move = Vector2.zero;
 
@@ -155,7 +155,8 @@ public class CharacterController : MonoBehaviour
     {
         if (!controlsEnabled) return;
 
-        controls.Player.Jump.performed -= Attack;
+        controls.Player.Attack.performed -= Attack;
+        controls.Player.Jump.performed -= Jump;
 
         move = Vector2.zero;
 
