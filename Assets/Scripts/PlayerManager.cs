@@ -35,6 +35,8 @@ public class PlayerManager : MonoBehaviour
 
     public void OnDestroy()
     {
+        controls.Player.Switch.performed -= ChangeCharacter;
+
         foreach (CharacterController character in characters)
         {
             character.health.onDeath -= DisableCharacterChange;
