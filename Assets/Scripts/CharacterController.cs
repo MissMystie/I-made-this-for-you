@@ -8,6 +8,7 @@ using static UnityEngine.InputSystem.InputAction;
 
 public class CharacterController : MonoBehaviour
 {
+    public HealthManager health;
     public Transform sprite;
     public Animator anim;
     public int faceDir = 1;
@@ -17,6 +18,7 @@ public class CharacterController : MonoBehaviour
     public float gravity = 9.8f;
     public float moveSpeed = 5f;
     public float jumpVelocity = 8f;
+    public float jumpStartDamp = 0f;
     public float jumpDamp = 0.8f;
     public float jumpBuildupTime = 2f / 8;
     public float jumpFreezeTime = 4f / 8;
@@ -114,7 +116,7 @@ public class CharacterController : MonoBehaviour
     public IEnumerator JumpCoroutine()
     {
         move.x = 0;
-        rb.linearVelocityX = 0;
+        rb.linearVelocityX *= jumpStartDamp;
         anim.SetTrigger(jumpAnimParam);
         canMove = false;
 

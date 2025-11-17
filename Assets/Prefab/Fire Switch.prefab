@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6819390455596487048}
   - component: {fileID: 4418181893138431843}
   - component: {fileID: 8965307284179881450}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Fire Switch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,12 +49,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82d7b5895168a604a96e1eff234e2d56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthManager
+  rb: {fileID: 0}
+  anim: {fileID: 0}
   dieOnHit: 0
   respawns: 0
   safeGround: {x: 0, y: 0}
   respawnTime: 0
   vulnerabilities: 02000000
   mechanism: {fileID: 7815766393360166368}
+  deathDelay: 0.5
+  respawnDelay: 0.5
+  deathAnimParam: death
+  respawnAnimParam: respawn
 --- !u!114 &7815766393360166368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,7 +182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2688665860647379071}
   - component: {fileID: 8649420412579292170}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

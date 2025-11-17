@@ -31,7 +31,8 @@ public class MovingPlatform : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.CompareTag(playerTag))
+        if (collider.gameObject.CompareTag(playerTag)
+            && !transform.IsChildOf(collider.transform))
         {
             player = collider;
             player.transform.parent = transform;

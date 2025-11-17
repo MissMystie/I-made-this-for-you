@@ -1,3 +1,4 @@
+using Mystie.Utils;
 using UnityEngine;
 using static HealthManager;
 
@@ -6,14 +7,17 @@ public class TriggerZone : MonoBehaviour
     public bool killOnTrigger;
     public Lifetime lifetime;
     public DamageType damageType;
+    public LayerMask mask;
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        HealthManager health = col.GetComponent<HealthManager>();
-        if (health != null)
+        if (col.gameObject.IsInLayerMask(mask))
         {
-            health.TakeDamage(damageType);
+            HealthManager health = col.GetComponent<HealthManager>();
+            health?.TakeDamage(damageType);
+
             if (killOnTrigger) lifetime.Kill();
         }
+
     }
 }

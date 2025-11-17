@@ -10,6 +10,7 @@ public class PlayerManager : MonoBehaviour
     public CinemachineCamera vcam;
     public Controls controls;
     public List<CharacterController> characters;
+    bool canChangeCharacter = true;
 
     public int characterIndex = 0;
 
@@ -24,13 +25,41 @@ public class PlayerManager : MonoBehaviour
         ChangeCharacter(0);
 
         controls.Player.Switch.performed += ChangeCharacter;
+
+        foreach (CharacterController character in characters)
+        {
+            character.health.onDeath += DisableCharacterChange;
+            character.health.onRespawn += EnableCharacterChange;
+        }
+    }
+
+    public void OnDestroy()
+    {
+        foreach (CharacterController character in characters)
+        {
+            character.health.onDeath -= DisableCharacterChange;
+            character.health.onRespawn -= EnableCharacterChange;
+        }
+    }
+
+    public void EnableCharacterChange()
+    {
+        canChangeCharacter = true;
+    }
+
+    public void DisableCharacterChange()
+    {
+        canChangeCharacter = false;
     }
 
     [Button]
     public void ChangeCharacter(CallbackContext ctx = default)
     {
+        if (!canChangeCharacter) return;
+
         int i = characterIndex + 1;
-        if (i >= characters.Count) {
+        if (i >= characters.Count)
+        {
             i = 0;
         }
 

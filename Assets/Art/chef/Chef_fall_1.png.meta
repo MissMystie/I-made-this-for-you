@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d2ef38cfd712ba743affb7f1fc4dcc0a
+guid: 4d32d169710cfcb499561a538dd70142
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -468317878176647676
-    second: firegirl_respawn_1_0
+      213: -7522086736142876462
+    second: Chef_fall_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: firegirl_respawn_1_0
+      name: Chef_fall_1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 330
-        height: 330
+        x: 19
+        y: 4
+        width: 287
+        height: 326
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 406f05dfe533089f0800000000000000
-      internalID: -468317878176647676
+      spriteID: 2d0c68a97fd2c9790800000000000000
+      internalID: -7522086736142876462
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      firegirl_respawn_1_0: -468317878176647676
+      Chef_fall_1_0: -7522086736142876462
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

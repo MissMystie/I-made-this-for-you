@@ -85,6 +85,9 @@ MonoBehaviour:
   killOnTrigger: 0
   lifetime: {fileID: 0}
   damageType: 2
+  mask:
+    serializedVersion: 2
+    m_Bits: 577
 --- !u!212 &5182819451086069802
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -314,6 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef624c89d25a0fe43967c84ec499dd7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireCharacterController
+  health: {fileID: 7902260109528120896}
   sprite: {fileID: 6352431949795923040}
   anim: {fileID: 6843149929665940182}
   faceDir: 1
@@ -321,6 +325,7 @@ MonoBehaviour:
   gravity: 9.5
   moveSpeed: 6
   jumpVelocity: 16
+  jumpStartDamp: 1
   jumpDamp: 0.6
   jumpBuildupTime: 0.125
   jumpFreezeTime: 0.375
@@ -333,7 +338,7 @@ MonoBehaviour:
   groundCheckDist: 0.1
   groundMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 576
   groundCollider: {fileID: 0}
   movingPlatform: {fileID: 0}
   movingPlatformTag: Moving
@@ -387,3 +392,14 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 6520925003958487438, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
   m_PrefabInstance: {fileID: 326856388709106520}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7902260109528120896 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7575984299484871960, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+  m_PrefabInstance: {fileID: 326856388709106520}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4529411707375037463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d7b5895168a604a96e1eff234e2d56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthManager

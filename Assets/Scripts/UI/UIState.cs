@@ -107,7 +107,7 @@ namespace Mystie.UI
 
             if (rect != null) LayoutRebuilder.ForceRebuildLayoutImmediate(rect);
 
-            manager.cursor.SetVisible(showCursor);
+            //manager.cursor.SetVisible(showCursor);
 
             if (!displaySFX.IsNull)
                 RuntimeManager.PlayOneShot(displaySFX);

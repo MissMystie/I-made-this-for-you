@@ -257,3 +257,6 @@ MonoBehaviour:
   killOnTrigger: 0
   lifetime: {fileID: 0}
   damageType: 1
+  mask:
+    serializedVersion: 2
+    m_Bits: 8
