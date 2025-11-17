@@ -1,3 +1,5 @@
+using FMODUnity;
+using NUnit.Framework;
 using System;
 using System.Collections;
 using UnityEngine;
@@ -40,6 +42,10 @@ public class CharacterController : MonoBehaviour
     public string jumpAnimParam = "jump";
     
     public string groundedAnimParam = "grounded";
+
+    public EventReference jumpSFX;
+    public EventReference landSFX;
+    public StudioEventEmitter walkSFX;
 
     public virtual void Awake()
     {
@@ -111,8 +117,9 @@ public class CharacterController : MonoBehaviour
         move.x = 0;
         rb.linearVelocityX = 0;
         anim.SetTrigger(jumpAnimParam);
-
         canMove = false;
+
+        RuntimeManager.PlayOneShot(jumpSFX);
 
         yield return new WaitForSeconds(jumpBuildupTime);
 
@@ -157,7 +164,7 @@ public class CharacterController : MonoBehaviour
 
     public void OnGrounded(Collider2D platform)
     {
-
+        RuntimeManager.PlayOneShot(landSFX);
         /*else
         {
             movingPlatform = null;

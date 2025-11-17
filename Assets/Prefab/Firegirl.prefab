@@ -199,6 +199,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Firegirl
       objectReference: {fileID: 0}
+    - target: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Firegirl/Firegirl_walk
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -1359939364
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1088245738
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -1972332667
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: 1749576481
+      objectReference: {fileID: 0}
     - target: {fileID: 6520925003958487438, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
       propertyPath: m_Controller
       value: 
@@ -314,8 +342,41 @@ MonoBehaviour:
   attackAnimParam: attack
   jumpAnimParam: jump
   groundedAnimParam: grounded
+  jumpSFX:
+    Guid:
+      Data1: 266203144
+      Data2: 1277817060
+      Data3: 408740527
+      Data4: -1262482630
+    Path: event:/Firegirl/Firegirl_jump
+  landSFX:
+    Guid:
+      Data1: -828976466
+      Data2: 1274288278
+      Data3: 1368970142
+      Data4: 1694159224
+    Path: event:/Firegirl/Firegirl_land
+  walkSFX: {fileID: 6063367861826393943}
   attackArea: {fileID: 1024076975529076618}
   attackTime: 0.5
+  attackSFX:
+    Guid:
+      Data1: 1296297252
+      Data2: 1299044597
+      Data3: 803751345
+      Data4: 1836007620
+    Path: event:/Firegirl/Firegirl_attack
+--- !u!114 &6063367861826393943 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5813112300910695439, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+  m_PrefabInstance: {fileID: 326856388709106520}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
 --- !u!4 &6352431949795923040 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6674727263591683896, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
