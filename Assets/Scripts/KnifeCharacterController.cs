@@ -13,7 +13,7 @@ public class KnifeCharacterController : CharacterController
     public string boardAnimParam = "board";
 
     public EventReference throwSFX;
-    
+
 
     public override void Awake()
     {
@@ -27,20 +27,28 @@ public class KnifeCharacterController : CharacterController
         {
             if (move.y > 0 || platformOut)
             {
-                platformOut = !platformOut;
-                if (!platformOut) platform.Unparent();
-                platform.gameObject.SetActive(platformOut);
-                anim.SetBool("board", platformOut);
+                TogglePlatform();
+                return;
             }
-            
-            if (!platformOut)
-            {
-                RuntimeManager.PlayOneShot(throwSFX);
-                anim.SetTrigger(attackAnimParam);
-                Rigidbody2D projectileInstance = Instantiate(projectile);
-                projectileInstance.transform.position = throwPoint.position;
-                projectileInstance.linearVelocityX = projectileSpeed * faceDir;
-            }
+
+            if (!platformOut) Throw();
         }
+    }
+
+    public void TogglePlatform()
+    {
+        platformOut = !platformOut;
+        if (!platformOut) platform.Unparent();
+        platform.gameObject.SetActive(platformOut);
+        anim.SetBool("board", platformOut);
+    }
+
+    public void Throw()
+    {
+        RuntimeManager.PlayOneShot(throwSFX);
+        anim.SetTrigger(attackAnimParam);
+        Rigidbody2D projectileInstance = Instantiate(projectile);
+        projectileInstance.transform.position = throwPoint.position;
+        projectileInstance.linearVelocityX = projectileSpeed * faceDir;
     }
 }
