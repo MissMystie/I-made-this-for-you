@@ -357,6 +357,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1239604998774523620, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: m_GravityScale
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3587880639863668205, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
       propertyPath: m_Size.x
       value: 1.5
@@ -529,12 +533,12 @@ MonoBehaviour:
   anim: {fileID: 4600074284208063626}
   faceDir: 1
   rb: {fileID: 8402507030313044960}
-  gravity: 9.8
+  gravity: 12
   moveSpeed: 4
-  jumpVelocity: 0
-  jumpDamp: 0.8
-  jumpBuildupTime: 0.25
-  jumpFreezeTime: 0.5
+  jumpVelocity: 12
+  jumpDamp: 0
+  jumpBuildupTime: 0
+  jumpFreezeTime: 0.1
   drag: 0.1
   acc: 0.1
   airDrag: 0.05
@@ -571,6 +575,7 @@ MonoBehaviour:
   throwPoint: {fileID: 2530335840457507948}
   projectile: {fileID: 2071698612688735165, guid: 9cda1e79ac1412d459507b694c977051, type: 3}
   projectileSpeed: 6
+  projectileRotationSpeed: 45
   platform: {fileID: 85195259900952559}
   platformOut: 0
   moveSpeedPlatform: 3

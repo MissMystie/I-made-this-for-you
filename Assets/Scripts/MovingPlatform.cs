@@ -40,7 +40,7 @@ public class MovingPlatform : MonoBehaviour
 
     public void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.gameObject == player.gameObject)
+        if (player != null && collider.gameObject == player.gameObject)
             Unparent();
     }
 

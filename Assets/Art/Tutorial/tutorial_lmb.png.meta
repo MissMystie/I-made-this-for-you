@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0cd6aa7268b107b408f51eadfcccb5ba
+guid: df04848fb719f0847af536b4371f1568
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1960377319427707138
-    second: water_3_0
+      213: 3683027696225991870
+    second: tutorial_lmb_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,7 +48,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -113,79 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: water_3_l
+      name: tutorial_lmb_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 200
-        height: 200
+        x: 8
+        y: 1
+        width: 62
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape:
-      - - {x: 100, y: -8}
-        - {x: -100, y: -8}
-        - {x: -100, y: -100}
-        - {x: 100, y: -100}
-      tessellationDetail: 0
+      physicsShape: []
+      tessellationDetail: -1
       bones: []
-      spriteID: 201983619c8a43b10800000000000000
-      internalID: 1960377319427707138
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: water_3_mid
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 0
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape:
-      - - {x: 100, y: -8}
-        - {x: -100, y: -8}
-        - {x: -100, y: -100}
-        - {x: 100, y: -100}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f133f76cbb717a4e97c7b723bf9a7a1
-      internalID: 56329668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: water_3_r
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 0
-        width: 200
-        height: 200
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape:
-      - - {x: 100, y: -8}
-        - {x: -100, y: -8}
-        - {x: -100, y: -100}
-        - {x: 100, y: -100}
-      tessellationDetail: 0
-      bones: []
-      spriteID: edbc490555b9a6942b7497fd07d65529
-      internalID: 715860721
+      spriteID: ebcb97b1d2ebc1330800000000000000
+      internalID: 3683027696225991870
       vertices: []
       indices: 
       edges: []
@@ -194,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 677cb369ea88f14459015534d82d66ff
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -202,13 +146,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":200.0,"y":200.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":1,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      water_3_l: 1960377319427707138
-      water_3_mid: 56329668
-      water_3_r: 715860721
+      tutorial_lmb_0: 3683027696225991870
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

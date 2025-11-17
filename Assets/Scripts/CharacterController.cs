@@ -103,7 +103,7 @@ public class CharacterController : MonoBehaviour
         Debug.Log("attack");
     }
 
-    public void Jump(CallbackContext ctx = default)
+    public virtual void Jump(CallbackContext ctx = default)
     {
         if (isGrounded)
         {

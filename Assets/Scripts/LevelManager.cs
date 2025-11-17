@@ -1,3 +1,4 @@
+using FMODUnity;
 using Mystie.UI;
 using NaughtyAttributes;
 using NUnit.Framework;
@@ -12,6 +13,7 @@ namespace Mystie.Core
     public class LevelManager : MonoBehaviour
     {
         public UIState victoryState;
+        public StudioEventEmitter bgm;
 
         //public GameObject player { get; private set; }
         //[field: SerializeField] public GameObject playerObj { get; private set; }
@@ -46,6 +48,12 @@ namespace Mystie.Core
             //currentRespawn = respawnPoint;
 
             //GameObject playerInstance = Instantiate(playerPrefab.gameObject, currentRespawn.position, Quaternion.identity);
+        }
+
+        private IEnumerator Start()
+        {
+            bgm.Play();
+            yield break;
         }
 
         public void CompleteLevel()
