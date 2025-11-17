@@ -982,7 +982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NextLevel
   autoTransition: 1
-  delay: 10
+  delay: 20
 --- !u!4 &1404903432
 Transform:
   m_ObjectHideFlags: 0
