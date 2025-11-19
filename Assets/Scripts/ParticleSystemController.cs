@@ -278,6 +278,11 @@ namespace Misty
             }
         }
 
+        private void OnValidate()
+        {
+            UpdateShape();
+        }
+
         private void Reset()
         {
             effects = new List<ParticleSystem>();
