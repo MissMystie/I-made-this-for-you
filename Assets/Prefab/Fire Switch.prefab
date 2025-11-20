@@ -76,6 +76,10 @@ MonoBehaviour:
   anim: {fileID: 8965307284179881450}
   input: {fileID: 0}
   isOn: 0
+  autoLock: 0
+  autoLockValue: 1
+  autoTime: 3
+  autoToggle: 1
   activateParam: on
 --- !u!50 &6819390455596487048
 Rigidbody2D:

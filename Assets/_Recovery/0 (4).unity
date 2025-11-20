@@ -1386,10 +1386,6 @@ PrefabInstance:
       value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 3624645269663298005, guid: fe44b4a6dc8189540ab24fa1ba7a6048, type: 3}
-      propertyPath: orthographic size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3624645269663298005, guid: fe44b4a6dc8189540ab24fa1ba7a6048, type: 3}
       propertyPath: m_BackGroundColor.a
       value: 0
       objectReference: {fileID: 0}
@@ -1544,10 +1540,6 @@ PrefabInstance:
     - target: {fileID: 8218831471360027504, guid: fe44b4a6dc8189540ab24fa1ba7a6048, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8414119466488353992, guid: fe44b4a6dc8189540ab24fa1ba7a6048, type: 3}
-      propertyPath: Lens.OrthographicSize
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8528370808044036267, guid: fe44b4a6dc8189540ab24fa1ba7a6048, type: 3}
       propertyPath: m_IsActive

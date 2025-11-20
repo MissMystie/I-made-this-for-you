@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1397812437
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -584,7 +584,7 @@ MonoBehaviour:
   walkSFX: {fileID: 3820204064440146187}
   throwPoint: {fileID: 2530335840457507948}
   projectile: {fileID: 2071698612688735165, guid: 9cda1e79ac1412d459507b694c977051, type: 3}
-  projectileSpeed: 6
+  projectileSpeed: 12
   projectileRotationSpeed: 45
   platform: {fileID: 85195259900952559}
   platformOut: 0

@@ -14,14 +14,11 @@ public class PlayerManager : MonoBehaviour
 
     public int characterIndex = 0;
 
-    public void Awake()
+    public void Start()
     {
         controls = new Controls();
         controls.Enable();
-    }
 
-    public void Start()
-    {
         ChangeCharacter(0);
 
         controls.Player.Switch.performed += ChangeCharacter;
@@ -42,6 +39,10 @@ public class PlayerManager : MonoBehaviour
             character.health.onDeath -= DisableCharacterChange;
             character.health.onRespawn -= EnableCharacterChange;
         }
+
+        characters[characterIndex].DisableInputs(controls);
+
+        controls.Disable();
     }
 
     public void EnableCharacterChange()
