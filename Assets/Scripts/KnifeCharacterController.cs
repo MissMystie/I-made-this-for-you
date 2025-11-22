@@ -14,7 +14,8 @@ public class KnifeCharacterController : CharacterController
     public string boardAnimParam = "board";
 
     public EventReference throwSFX;
-
+    public EventReference boardUpSFX;
+    public EventReference boardDownSFX;
 
     public override void Awake()
     {
@@ -26,7 +27,7 @@ public class KnifeCharacterController : CharacterController
     {
         if (isGrounded)
         {
-            if (move.y > 0 || platformOut)
+            if (move.y < 0 || platformOut)
             {
                 TogglePlatform();
                 return;
