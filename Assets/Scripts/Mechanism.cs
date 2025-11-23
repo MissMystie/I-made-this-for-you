@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using FMODUnity;
 using Mystie;
 using UnityEngine;
 using VInspector;
@@ -14,11 +15,17 @@ public class Mechanism : MonoBehaviour
     public bool isOn;
     //public bool locked;
     public bool autoLock;
+
+    public EventReference onSFX;
+    public EventReference offSFX;
+
     [ShowIf("autoLock")] public bool autoLockValue;
     [ShowIf("autoLock")] public float autoTime;
     [ShowIf("autoLock")] public bool autoToggle;
     private Timer timer;
     public string activateParam = "IsOn";
+
+
 
     public void Awake()
     {
@@ -54,6 +61,10 @@ public class Mechanism : MonoBehaviour
         if (timer.time > 0) return;
 
         isOn = on;
+
+        if (isOn) RuntimeManager.PlayOneShot(onSFX);
+        else RuntimeManager.PlayOneShot(offSFX);
+
         if (anim != null) anim.SetBool(activateParam, on);
         if (!init)
         {

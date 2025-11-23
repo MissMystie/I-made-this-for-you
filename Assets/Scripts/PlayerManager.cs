@@ -14,7 +14,7 @@ public class PlayerManager : MonoBehaviour
 
     public int characterIndex = 0;
 
-    public void Start()
+    public void OnEnable()
     {
         controls = new Controls();
         controls.Enable();
@@ -30,7 +30,7 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    public void OnDestroy()
+    public void OnDisable()
     {
         controls.Player.Switch.performed -= ChangeCharacter;
 

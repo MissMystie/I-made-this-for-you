@@ -14,6 +14,7 @@ public class TriggerZone : MonoBehaviour
         if (col.gameObject.IsInLayerMask(mask))
         {
             HealthManager health = col.GetComponent<HealthManager>();
+
             health?.TakeDamage(damageType);
 
             if (killOnTrigger) lifetime.Kill();

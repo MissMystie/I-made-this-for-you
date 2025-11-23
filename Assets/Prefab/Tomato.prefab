@@ -140,9 +140,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82d7b5895168a604a96e1eff234e2d56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthManager
+  rb: {fileID: 0}
+  anim: {fileID: 0}
   dieOnHit: 1
   respawns: 0
   safeGround: {x: 0, y: 0}
   respawnTime: 0
   vulnerabilities: 00000000
   mechanism: {fileID: 0}
+  deathDelay: 0
+  respawnDelay: 0
+  deathAnimParam: death
+  respawnAnimParam: respawn
+  deathSFX:
+    Guid:
+      Data1: -1659683980
+      Data2: 1162719123
+      Data3: -1027946061
+      Data4: -976300182
+    Path: event:/Chef/knife_slice
+  respawnSFX:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 

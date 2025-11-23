@@ -1,4 +1,5 @@
 using FMODUnity;
+using Mystie.Utils;
 using NUnit.Framework;
 using System;
 using System.Collections;
@@ -32,6 +33,7 @@ public class CharacterController : MonoBehaviour
     public bool isGrounded;
     public float groundCheckDist = 0.01f;
     public LayerMask groundMask;
+    public LayerMask waterMask;
 
     public Collider2D groundCollider;
     public Collider2D movingPlatform;
@@ -46,6 +48,7 @@ public class CharacterController : MonoBehaviour
 
     public EventReference jumpSFX;
     public EventReference landSFX;
+    public EventReference waterEnterSFX;
     public StudioEventEmitter walkSFX;
 
     public Transform pointer;
@@ -191,5 +194,18 @@ public class CharacterController : MonoBehaviour
     {
         Gizmos.color = isGrounded ? Color.green : Color.red;
         Gizmos.DrawWireSphere(transform.position, groundCheckDist);
+    }
+
+    public void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.IsInLayerMask(waterMask))
+        {
+            RuntimeManager.PlayOneShot(waterEnterSFX);
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D col)
+    {
+
     }
 }

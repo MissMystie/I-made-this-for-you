@@ -25,15 +25,9 @@ public class KnifeCharacterController : CharacterController
 
     public override void Board(CallbackContext ctx = default)
     {
-        if (isGrounded)
+        if (isGrounded || platformOut)
         {
-            if (move.y < 0 || platformOut)
-            {
-                TogglePlatform();
-                return;
-            }
-
-            StartCoroutine(JumpCoroutine());
+            TogglePlatform();
         }
     }
 
@@ -44,11 +38,6 @@ public class KnifeCharacterController : CharacterController
             if (platformOut)
             {
                 TogglePlatform();
-            }
-            if (move.y < 0 || platformOut)
-            {
-                TogglePlatform();
-                return;
             }
 
             StartCoroutine(JumpCoroutine());
@@ -61,6 +50,7 @@ public class KnifeCharacterController : CharacterController
         {
             TogglePlatform();
         }
+
         if (!platformOut) Throw();
     }
 

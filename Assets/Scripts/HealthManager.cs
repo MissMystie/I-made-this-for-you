@@ -1,3 +1,4 @@
+using FMODUnity;
 using Mystie.Core;
 using NUnit.Framework;
 using System;
@@ -26,6 +27,9 @@ public class HealthManager : MonoBehaviour
     public string deathAnimParam = "death";
     public string respawnAnimParam = "respawn";
 
+    public EventReference deathSFX;
+    public EventReference respawnSFX;
+
     void Start()
     {
         safeGround = transform.position;
@@ -52,6 +56,8 @@ public class HealthManager : MonoBehaviour
 
         if (anim != null) anim.SetTrigger(deathAnimParam);
 
+        RuntimeManager.PlayOneShot(deathSFX);
+
         yield return new WaitForSeconds(deathDelay);
 
         gameObject.SetActive(false);
@@ -71,6 +77,7 @@ public class HealthManager : MonoBehaviour
 
         yield return new WaitForSeconds(respawnDelay);
 
+        RuntimeManager.PlayOneShot(respawnSFX);
         onRespawn?.Invoke();
         if (rb != null) rb.bodyType = RigidbodyType2D.Dynamic;
     }

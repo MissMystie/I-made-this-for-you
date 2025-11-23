@@ -580,11 +580,11 @@ MonoBehaviour:
     Path: event:/Chef/chef_jump
   landSFX:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1113720995
+      Data2: 1299275182
+      Data3: 616773000
+      Data4: 1840028610
+    Path: event:/Chef/chef_land
   walkSFX: {fileID: 3820204064440146187}
   pointer: {fileID: 7737655488064819563}
   throwPoint: {fileID: 2530335840457507948}

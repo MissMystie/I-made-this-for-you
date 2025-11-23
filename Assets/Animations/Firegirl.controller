@@ -497,7 +497,16 @@ MonoBehaviour:
         Data3: -1972332667
         Data4: 1749576481
       Path: event:/Firegirl/Firegirl_walk
-    time: 0.125
+    time: 0.083333336
+    loop: 1
+  - sfx:
+      Guid:
+        Data1: -1359939364
+        Data2: 1088245738
+        Data3: -1972332667
+        Data4: 1749576481
+      Path: event:/Firegirl/Firegirl_walk
+    time: 0.25
     loop: 1
 --- !u!1102 &4103115783078315061
 AnimatorState:

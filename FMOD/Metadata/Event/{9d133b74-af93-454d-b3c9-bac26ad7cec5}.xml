@@ -5,7 +5,7 @@
 			<value>knife_slice</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{c25d8356-5e3d-48d1-986c-57488bfcb70a}</destination>
@@ -96,6 +96,7 @@
 	<object class="MixerBusEffectChain" id="{03da7368-7cb2-409a-a1fd-3a7e68f60962}">
 		<relationship name="effects">
 			<destination>{71f9573e-f9ee-4bcf-b1df-5283fc4d7df0}</destination>
+			<destination>{9533a3aa-ced2-4e1e-8af8-dfb599d4984d}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{1006d12a-cc4a-4759-bcbb-37df1f383e07}" />
@@ -111,6 +112,7 @@
 	</object>
 	<object class="MixerBusFader" id="{cbfb0473-746e-40e9-80c3-570fb54a3ca8}" />
 	<object class="MixerBusFader" id="{71f9573e-f9ee-4bcf-b1df-5283fc4d7df0}" />
+	<object class="SpatialiserEffect" id="{9533a3aa-ced2-4e1e-8af8-dfb599d4984d}" />
 	<object class="RandomizerModulator" id="{7c0a7826-cc6f-4316-b044-971ea6d2f36d}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>volume</value>

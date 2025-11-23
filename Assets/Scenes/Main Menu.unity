@@ -1439,23 +1439,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4416221594764971814, guid: fe44b4a6dc8189540ab24fa1ba7a6048, type: 3}
       propertyPath: EventReference.Path
-      value: event:/Music/bgm
+      value: event:/Music/bgm_title
       objectReference: {fileID: 0}
     - target: {fileID: 4416221594764971814, guid: fe44b4a6dc8189540ab24fa1ba7a6048, type: 3}
       propertyPath: EventReference.Guid.Data1
-      value: -1660918670
+      value: 1421039468
       objectReference: {fileID: 0}
     - target: {fileID: 4416221594764971814, guid: fe44b4a6dc8189540ab24fa1ba7a6048, type: 3}
       propertyPath: EventReference.Guid.Data2
-      value: 1296985279
+      value: 1154432726
       objectReference: {fileID: 0}
     - target: {fileID: 4416221594764971814, guid: fe44b4a6dc8189540ab24fa1ba7a6048, type: 3}
       propertyPath: EventReference.Guid.Data3
-      value: -245161285
+      value: -381803080
       objectReference: {fileID: 0}
     - target: {fileID: 4416221594764971814, guid: fe44b4a6dc8189540ab24fa1ba7a6048, type: 3}
       propertyPath: EventReference.Guid.Data4
-      value: 1197289649
+      value: -260871948
       objectReference: {fileID: 0}
     - target: {fileID: 5545061460076811674, guid: fe44b4a6dc8189540ab24fa1ba7a6048, type: 3}
       propertyPath: m_AnchorMax.y
