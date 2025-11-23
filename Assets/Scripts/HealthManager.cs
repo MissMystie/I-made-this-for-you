@@ -36,7 +36,7 @@ public class HealthManager : MonoBehaviour
         if (vulnerabilities.Contains(dmgType))
         {
             if (dieOnHit) StartCoroutine(OnDeath());
-            else if (mechanism != null) mechanism.Activate(true);
+            else if (mechanism != null) mechanism.Toggle();
         }
     }
 
