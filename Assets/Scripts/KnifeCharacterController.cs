@@ -23,7 +23,7 @@ public class KnifeCharacterController : CharacterController
         platform.gameObject.SetActive(false);
     }
 
-    public override void Jump(CallbackContext ctx = default)
+    public override void Board(CallbackContext ctx = default)
     {
         if (isGrounded)
         {
@@ -37,8 +37,30 @@ public class KnifeCharacterController : CharacterController
         }
     }
 
+    public override void Jump(CallbackContext ctx = default)
+    {
+        if (isGrounded)
+        {
+            if (platformOut)
+            {
+                TogglePlatform();
+            }
+            if (move.y < 0 || platformOut)
+            {
+                TogglePlatform();
+                return;
+            }
+
+            StartCoroutine(JumpCoroutine());
+        }
+    }
+
     public override void Attack(CallbackContext ctx = default)
     {
+        if (platformOut)
+        {
+            TogglePlatform();
+        }
         if (!platformOut) Throw();
     }
 
@@ -47,7 +69,7 @@ public class KnifeCharacterController : CharacterController
         platformOut = !platformOut;
         if (!platformOut) platform.Unparent();
         platform.gameObject.SetActive(platformOut);
-        anim.SetBool("board", platformOut);
+        anim.SetBool(boardAnimParam, platformOut);
     }
 
     public void Throw()

@@ -338,7 +338,7 @@ MonoBehaviour:
   jumpDamp: 0.6
   jumpBuildupTime: 0.125
   jumpFreezeTime: 0.375
-  drag: 0.1
+  drag: 0.3
   acc: 0.1
   airDrag: 0.05
   airAcc: 0.05

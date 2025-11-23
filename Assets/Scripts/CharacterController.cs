@@ -106,6 +106,11 @@ public class CharacterController : MonoBehaviour
         Debug.Log("attack");
     }
 
+    public virtual void Board(CallbackContext ctx = default)
+    {
+        Debug.Log("board");
+    }
+
     public virtual void Jump(CallbackContext ctx = default)
     {
         if (isGrounded)
@@ -146,6 +151,7 @@ public class CharacterController : MonoBehaviour
 
         controls.Player.Attack.performed += Attack;
         controls.Player.Jump.performed += Jump;
+        controls.Player.Board.performed += Board;
 
         move = Vector2.zero;
 
@@ -162,6 +168,7 @@ public class CharacterController : MonoBehaviour
 
         controls.Player.Attack.performed -= Attack;
         controls.Player.Jump.performed -= Jump;
+        controls.Player.Board.performed -= Board;
 
         move = Vector2.zero;
 
