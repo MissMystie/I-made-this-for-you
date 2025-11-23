@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="AudioFile" id="{23a41eaa-254f-4751-a5a8-695cef7e84db}">
+	<object class="AudioFile" id="{72e8d6b9-306c-4f43-9a5c-051eaac69ccc}">
 		<property name="assetPath">
-			<value>Knife_slice.wav</value>
+			<value>waterbubbles.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
@@ -11,7 +14,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.74287499999999995</value>
+			<value>15.847625000000001</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{6ca6d77e-fb2e-4437-aa30-940aa479d2f4}</destination>
