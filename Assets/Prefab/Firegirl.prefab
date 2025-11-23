@@ -133,7 +133,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1397812437
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 10
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 0.3529412}
@@ -193,6 +193,10 @@ PrefabInstance:
     - target: {fileID: 665704220995463738, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065639137228201071, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3587880639863668205, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
       propertyPath: m_Offset.y
@@ -290,6 +294,11 @@ PrefabInstance:
       insertIndex: 1
       addedObject: {fileID: 6441954099136577721}
   m_SourcePrefab: {fileID: 100100000, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+--- !u!224 &738822341826404151 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1065639137228201071, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+  m_PrefabInstance: {fileID: 326856388709106520}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &987471741275826530 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 665704220995463738, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
@@ -362,6 +371,7 @@ MonoBehaviour:
       Data4: 1694159224
     Path: event:/Firegirl/Firegirl_land
   walkSFX: {fileID: 6063367861826393943}
+  pointer: {fileID: 738822341826404151}
   attackArea: {fileID: 1024076975529076618}
   attackTime: 0.5
   attackSFX:

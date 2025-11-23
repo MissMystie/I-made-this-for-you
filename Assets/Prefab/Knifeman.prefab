@@ -357,6 +357,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1065639137228201071, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1239604998774523620, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
       propertyPath: m_GravityScale
       value: 5
@@ -582,6 +586,7 @@ MonoBehaviour:
       Data4: 0
     Path: 
   walkSFX: {fileID: 3820204064440146187}
+  pointer: {fileID: 7737655488064819563}
   throwPoint: {fileID: 2530335840457507948}
   projectile: {fileID: 2071698612688735165, guid: 9cda1e79ac1412d459507b694c977051, type: 3}
   projectileSpeed: 12
@@ -597,6 +602,25 @@ MonoBehaviour:
       Data3: 979420845
       Data4: -1944480905
     Path: event:/Chef/chef_knifeuse
+  boardUpSFX:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  boardDownSFX:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+--- !u!224 &7737655488064819563 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1065639137228201071, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}
+  m_PrefabInstance: {fileID: 7325181268248300804}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7824243472535168830 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 665704220995463738, guid: 53708128ec729f8418d61c7838fe39bc, type: 3}

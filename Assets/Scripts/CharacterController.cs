@@ -42,12 +42,13 @@ public class CharacterController : MonoBehaviour
     public string speedAnimParam = "speed";
     public string attackAnimParam = "attack";
     public string jumpAnimParam = "jump";
-
     public string groundedAnimParam = "grounded";
 
     public EventReference jumpSFX;
     public EventReference landSFX;
     public StudioEventEmitter walkSFX;
+
+    public Transform pointer;
 
     public virtual void Awake()
     {
@@ -149,6 +150,8 @@ public class CharacterController : MonoBehaviour
         move = Vector2.zero;
 
         controlsEnabled = true;
+
+        pointer.gameObject.SetActive(true);
     }
 
 
@@ -163,6 +166,8 @@ public class CharacterController : MonoBehaviour
         move = Vector2.zero;
 
         controlsEnabled = false;
+
+        pointer.gameObject.SetActive(false);
     }
 
     public void OnGrounded(Collider2D platform)
